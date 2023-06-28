@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mailto:office@lexmedia.rs" />
+    <meta
+      name="keywords"
+      content="Lex Media, Marketing, foto, Video, Promo, Web, Slikanje"
+    />
+    <meta
+      name="description"
+      content="LEX Media je nastala kao spoj drugarstva, kreativnosti 
+      i posla. Iako novi na tržištu iza nas je dosta ozbiljnih projekata
+       i zadovoljnih klijenata. Naš tim čine profesionalci koji svojim
+        iskustvom i posvećenošću garantuju najbolji kvalitet za vas."
+    />
+
+    <meta name="copyright" content="Lex Media 2022. Sva prava zadržava." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://res.cloudinary.com/veseylab/raw/upload/v1597754760/magicmouse/magic-mouse-1.0.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="img/logo-icon.ico" type="image/x-icon" />
+    <title>Lex Media</title>
+  </head>
+  <body onload="init()">
+    <div
+      id="preloader"
+      class="justify-content-center align-items-center w-100 h-100"
+    >
+      <img src="img/logo-icon.png" alt="loader" />
+    </div>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light py-2 bg-white position-fixed w-100 border-0"
+      id="navbar"
+    >
+      <div class="container w-md-75 w-100">
+        <div class="filler"></div>
+        <a
+          class="navbar-brand logo-font primary-color primary-color"
+          href="index.html"
+        >
+          <img src="img/logo-icon.png" class="me-1" alt="logo" />
+          Lex Media
+        </a>
+        <span
+          class="iconify text-black fs-1"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          data-icon="system-uicons:menu-hamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></span>
+        <!-- <span class="iconify" data-icon="system-uicons:menu-hamburger"></span> -->
+        <!-- </button> -->
+        <div
+          class="collapse navbar-collapse justify-content-end primary-font"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <!-- <div class="underline d-flex justify-content-end ms-auto"></div> -->
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" aria-current="page" href="#">
+                <span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span>
+                Početna</a
+              >
+              <div class="underline"></div>
+            </li>
+            <li class="nav-item">
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" href="about.html"
+                ><span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span
+                >O nama</a
+              >
+              <div class="underline"></div>
+            </li>
+            <li class="nav-item">
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" href="portfolio.html"
+                ><span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span
+                >Portfolio</a
+              >
+              <div class="underline"></div>
+            </li>
+            <li class="nav-item">
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" href="contact.html"
+                ><span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span
+                >Kontakt</a
+              >
+              <div class="underline"></div>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- COVER -->
+    <div id="cover">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide p-0"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="gradient-overlay-1"></div>
+            <div class="cover-text-wrap">
+              <div class="cover-text">
+                <h1 class="logo-font text-white display-1 fade-in-top">
+                  <span>Snimanje korporativnog videa.</span>
+                </h1>
+                <p class="text-white secondary-font fade-in-left fst-italic">
+                  Najbolja komunikacija izmedju klijenata i vašeg brenda.
+                </p>
+                <p class="mt-5 fade-in-bottom">
+                  <a
+                    href="contact.html"
+                    class="text-decoration-none text-uppercase text-white secondary-font primary-btn"
+                    >Kontaktirajte nas</a
+                  >
+                </p>
+              </div>
+            </div>
+            <img src="img/cover-3.jpg" class="w-100 h-100" alt="cover photo" />
+          </div>
+          <div class="carousel-item">
+            <div class="gradient-overlay-2"></div>
+            <div class="cover-text-wrap">
+              <div class="cover-text">
+                <h1 class="logo-font text-white display-1 fade-in-top">
+                  Vodjenje internet pristustva.
+                </h1>
+                <p class="text-white secondary-font fade-in-left">
+                  Ignorisanje web marketinga je kao da započnete biznis, ali
+                  nikome ne kažete za to.
+                </p>
+                <p class="mt-5 fade-in-bottom">
+                  <a
+                    href="contact.html"
+                    class="text-decoration-none text-uppercase text-white secondary-font primary-btn"
+                    >Kontaktirajte nas</a
+                  >
+                </p>
+              </div>
+            </div>
+            <img src="img/cover-2.jpg" class="w-100 h-100" alt="cover photo" />
+          </div>
+          <div class="carousel-item">
+            <div class="gradient-overlay"></div>
+            <div class="cover-text-wrap">
+              <div class="cover-text">
+                <h1 class="logo-font text-white display-1 fade-in-top">
+                  <span> Korporativna i promo fotografija.</span>
+                </h1>
+                <p class="text-white secondary-font fade-in-left">
+                  Kvalitetna fotografija je prva impresija brenda.
+                </p>
+                <p class="mt-5 fade-in-bottom">
+                  <a
+                    href="contact.html"
+                    class="text-decoration-none text-uppercase text-white secondary-font primary-btn"
+                    >Kontaktirajte nas</a
+                  >
+                </p>
+              </div>
+            </div>
+            <img src="img/cover-1.jpg" class="w-100 h-100" alt="cover photo" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon d-sm-block d-none"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon d-sm-block d-none"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- SERVICES -->
+    <div id="services">
+      <div class="container-fluid">
+        <div class="row py-5">
+          <div
+            class="col-lg-4 col-md-12 d-flex mb-lg-0 mb-md-3 p-0 justify-content-start align-items-center"
+          >
+            <div class="services-display">
+              <h6 class="text-muted small text-uppercase logo-font">
+                lex media
+              </h6>
+              <h2 class="display-5 display-font">
+                <span class="fst-italic">Naše</span>
+                <span class="fw-bold">Usluge</span>
+              </h2>
+              <div class="underline w-25"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-lg-4 p-md-2 mt-sm-0 mt-4">
+            <div class="row">
+              <div class="service-title">
+                <span
+                  class="iconify-inline display-6 text-muted"
+                  data-icon="ph:video-camera-thin"
+                ></span>
+                <h5 class="primary-font fw-bold m-0 p-0 ms-3 text-uppercase">
+                  Snimanje videa
+                </h5>
+              </div>
+              <p class="primary-font text-muted small mt-3">
+                Profesionalno snimanje korporativnih videa, spotova, događaja,
+                kao i snimanje i fotografisanje dronom sa licenciranim
+                operatorom.
+              </p>
+            </div>
+            <div class="row mt-3">
+              <div class="service-title">
+                <span
+                  class="iconify-inline display-6 text-muted"
+                  data-icon="ph:camera-thin"
+                ></span>
+                <h5 class="primary-font fw-bold m-0 p-0 ms-3">FOTOGRAFIJE</h5>
+              </div>
+              <p class="primary-font text-muted small mt-3">
+                Izrada profesionalne i studijiske fotografije za sve vrste
+                usluga, proizvoda vašeg brenda, dogadjaja i prostora. Ponuda
+                obuhvata i osnovni grafički dizajn.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-lg-4 p-md-2 mt-sm-0 mt-4">
+            <div class="row">
+              <div class="service-title">
+                <span
+                  class="iconify-inline display-6 text-muted"
+                  data-icon="ph:code-thin"
+                ></span>
+                <h5 class="primary-font fw-bold m-0 p-0 ms-3">WEB DIZAJN</h5>
+              </div>
+              <p class="primary-font text-muted small mt-3">
+                Izrada profesionalnih web sajtova, koristeći najnovije
+                tehnologije i najmoderniji dizajn. Zajedno kreiramo vašu
+                internet prezentaciju.
+              </p>
+            </div>
+            <div class="row mt-3">
+              <div class="service-title">
+                <span
+                  class="iconify-inline display-6 text-muted"
+                  data-icon="ph:instagram-logo-thin"
+                ></span>
+                <h5 class="primary-font fw-bold m-0 p-0 ms-3">
+                  DRUŠTVENE MREŽE
+                </h5>
+              </div>
+              <p class="primary-font text-muted small mt-3">
+                Održavanje svih društenih mreža kao što su Instagram, Facebook,
+                Twitter, Youtube. Kreiranje brže i lakše komunikacije sa
+                klijentima.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div
+            class="col-sm-6 bg-dark d-flex justify-content-center p-lg-5 p-md-0 align-items-center"
+          >
+            <div class="about-text p-5 px-sm-5 px-0">
+              <h6 class="text-muted small text-uppercase logo-font">
+                lex media
+              </h6>
+              <h2 class="display-5 display-font text-white">
+                <span class="fst-italic fw-light">O</span>
+                <span class="fw-bold">Nama</span>
+              </h2>
+              <div class="underline w-25 my-4"></div>
+              <p class="primary-font text-white text-about">
+                Lex Media je nastala na iskustvima oragnizacije koja se deset
+                godina uspešno bavi kulturom, umetnošću i marketingom. Naš tim
+                čine profesionalci koji svojim iskustvom i posvećenošću
+                garantuju najbolji kvalitet za vas.
+              </p>
+              <p class="mt-5">
+                <a
+                  href="about.html"
+                  class="text-decoration-none text-uppercase fw-bold text-white secondary-font primary-btn"
+                  >Saznaj više</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 about-img img-1">
+            <!-- <img src="img/about-1.jpg" alt="about" class="img-fluid"> -->
+          </div>
+        </div>
+        <div class="row img-row-2">
+          <div class="col-sm-6 p-0 about-img img-2">
+            <!-- <img src="img/about-1.jpg" alt="about" class="img-fluid"> -->
+          </div>
+          <div
+            class="col-sm-6 bg-light p-lg-5 p-md-0 d-flex justify-content-center align-items-center"
+          >
+            <div class="about-text p-5 px-sm-5 px-0">
+              <h6 class="text-muted small text-uppercase logo-font">
+                lex media
+              </h6>
+              <h2 class="display-5 display-font fw-bold">
+                <span class="fst-italic fw-light">Proces</span>
+                <span class="fw-bold">Rada</span>
+              </h2>
+              <div class="underline w-25 my-4"></div>
+              <p class="primary-font text-about">
+                Ceo proces rada fokusiran je da zajedničkim kreativnim rešenjima
+                dodjemo do najboljeg izdanja vašeg brenda. Kvalitetnom video
+                produkcijom, fotografijom i web dizajnom obezbedićemo najbolje
+                pozicioniranje vašeg brenda.
+              </p>
+              <p class="mt-5">
+                <a
+                  href="portfolio.html"
+                  class="text-decoration-none text-uppercase fw-bold text-dark secondary-font primary-btn border-dark"
+                  >Portfolio</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURES -->
+    <div id="features">
+      <div class="container-fluid py-5">
+        <div class="row px-4">
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center feature-wrap">
+            <p class="p-1 features-icon">
+              <img src="img/clock.gif" alt="feature" class="w-70" />
+            </p>
+            <h5 class="fw-bold primary-font text-uppercase">BRZA ISPORUKA</h5>
+            <!-- <p class="text-muted primary-font small px-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              modi quis omnis.
+            </p> -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center feature-wrap">
+            <p class="p-1 features-icon">
+              <img src="img/line-chart.gif" alt="feature" class="w-70" />
+            </p>
+            <h5 class="fw-bold primary-font text-uppercase">
+              Povećanje posećenosti
+            </h5>
+            <!-- <p class="text-muted primary-font small px-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              modi quis omnis.
+            </p> -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center feature-wrap">
+            <p class="p-1 features-icon">
+              <img src="img/idea.gif" alt="feature" class="w-70" />
+            </p>
+            <h5 class="fw-bold primary-font text-uppercase">
+              Kreativna rešenja
+            </h5>
+            <!-- <p class="text-muted primary-font small px-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              modi quis omnis.
+            </p> -->
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12 text-center feature-wrap">
+            <p class="p-1 features-icon">
+              <img src="img/location.gif" alt="feature" class="w-70" />
+            </p>
+            <h5 class="fw-bold primary-font text-uppercase">
+              Veliki izbor lokacija
+            </h5>
+            <!-- <p class="text-muted primary-font small px-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              modi quis omnis.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- GALLERY -->
+    <div id="gallery">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 p-0">
+            <div class="gallery-img-wrap">
+              <img src="img/cover-1.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-uppercase text-center text-shadow-drop-bl text-white"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-0">
+            <div class="gallery-img-wrap">
+              <img src="img/about-1.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-uppercase text-center text-white text-shadow-drop-bl"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-0">
+            <div class="gallery-img-wrap" id="gallery-1">
+              <img src="img/cover-3.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-uppercase text-center text-white text-shadow-drop-bl"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 p-0">
+            <div class="gallery-img-wrap">
+              <img src="img/about-1.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-shadow-drop-bl text-uppercase text-center text-white"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-0">
+            <div class="gallery-img-wrap">
+              <img src="img/cover-3.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-uppercase text-center text-white text-shadow-drop-bl"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-0">
+            <div class="gallery-img-wrap">
+              <img src="img/about-2.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-uppercase text-center text-white text-shadow-drop-bl"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 p-0">
+            <div class="gallery-img-wrap">
+              <img src="img/cover-2.jpg" alt="gallery img" />
+              <div class="gallery-img-text">
+                <div>
+                  <h5
+                    class="primary-font text-uppercase text-center text-white text-shadow-drop-bl"
+                  >
+                    Gallery img
+                  </h5>
+                  <p
+                    class="primary-font text-white text-center text-shadow-drop-bl"
+                  >
+                    Logo Branding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- STATS -->
+    <div id="stats">
+      <div class="container-fluid py-5">
+        <div class="row align-items-center px-sm-5 px-0">
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="stats-display">
+              <h6 class="text-muted small text-uppercase logo-font">
+                lex media
+              </h6>
+              <h2 class="display-5 display-font">
+                <span class="fst-italic">Naše</span>
+                <span class="fw-bold">Iskustvo</span>
+              </h2>
+              <div class="underline w-25"></div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 stats-info my-sm-0 my-2">
+            <h2 id="stat-1" class="display-font text-center text-black">16</h2>
+            <p class="primary-font text-black text-center fw-bold">
+              Godina iskustva
+            </p>
+          </div>
+          <div class="col-lg-3 col-sm-4 stats-info my-sm-0 my-2">
+            <h2 id="stat-2" class="display-font text-center text-black">16</h2>
+            <p class="primary-font text-black text-center fw-bold">Projekata</p>
+          </div>
+          <div class="col-lg-3 col-sm-4 stats-info my-sm-0 my-2">
+            <h2 id="stat-3" class="display-font text-center text-black">16</h2>
+            <p class="primary-font text-black text-center fw-bold">
+              Sati letenja dronom
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TEAM -->
+    <div id="team">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="p-0 col-sm-4 position-relative team-img-wrap">
+            <img src="img/team-3a.jpg" alt="team member" class="img-fluid" />
+            <div class="team-img-overlay">
+              <div class="team-img-text fade-in-top-1">
+                <h3 class="text-white display-font text-center">Žarko Jović</h3>
+                <p class="primary-font text-white text-center fw-bold">
+                  Web Designer
+                </p>
+                <p class="text-center">
+                  <a
+                    href="https://www.instagram.com/jovic_zarko/"
+                    target="_blank"
+                    class="text-white text-decoration-none mx-2"
+                  >
+                    <span class="iconify" data-icon="cib:instagram"></span>
+                  </a>
+                  <a href="#" class="text-white text-decoration-none mx-2">
+                    <span class="iconify" data-icon="ps:facebook-alt"></span>
+                  </a>
+                  <a href="#" class="text-white text-decoration-none mx-2"
+                    ><span
+                      class="iconify"
+                      data-icon="fa-brands:linkedin"
+                    ></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-0 col-sm-4 position-relative team-img-wrap">
+            <img
+              src="img/team-2b.jpg"
+              alt="team member"
+              class="img-fluid w-100 h-100"
+            />
+            <div class="team-img-overlay">
+              <div class="team-img-text fade-in-top-1">
+                <h3 class="text-white display-font text-center">
+                  Ognjen Stamenić
+                </h3>
+                <p class="primary-font text-white text-center fw-bold">
+                  Video Maker
+                </p>
+                <p class="text-center">
+                  <a
+                    href="https://www.instagram.com/stamenichognjen/"
+                    target="_blank"
+                    class="text-white text-decoration-none mx-2"
+                  >
+                    <span class="iconify" data-icon="cib:instagram"></span>
+                  </a>
+                  <a href="#" class="text-white text-decoration-none mx-2">
+                    <span class="iconify" data-icon="ps:facebook-alt"></span>
+                  </a>
+                  <a href="#" class="text-white text-decoration-none mx-2"
+                    ><span
+                      class="iconify"
+                      data-icon="fa-brands:linkedin"
+                    ></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-0 col-sm-4 position-relative team-img-wrap">
+            <img
+              src="img/team-1a.jpg"
+              alt="team member"
+              class="img-fluid w-100"
+            />
+            <div class="team-img-overlay">
+              <div class="team-img-text fade-in-top-1">
+                <h3 class="text-white display-font text-center">
+                  Srdjan Ranković
+                </h3>
+                <p class="primary-font text-white text-center fw-bold">
+                  CEO & Manager
+                </p>
+                <p class="text-center">
+                  <a
+                    href="https://www.instagram.com/el_sergius_r/"
+                    target="_blank"
+                    class="text-white text-decoration-none mx-2"
+                  >
+                    <span class="iconify" data-icon="cib:instagram"></span>
+                  </a>
+                  <a href="#" class="text-white text-decoration-none mx-2">
+                    <span class="iconify" data-icon="ps:facebook-alt"></span>
+                  </a>
+                  <a href="#" class="text-white text-decoration-none mx-2"
+                    ><span
+                      class="iconify"
+                      data-icon="fa-brands:linkedin"
+                    ></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PARTNERS -->
+    <div id="partners">
+      <div class="container-fluid">
+        <div class="owl-carousel owl-theme d-flex align-items-center">
+          <div class="item px-sm-4">
+            <img src="img/partner-3a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-11a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-15a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-17a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-4a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-13a.png" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-12a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-14a.png" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-2a.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-6.jpg" alt="partner" />
+          </div>
+          <div class="item px-sm-4">
+            <img src="img/partner-7.png" alt="partner" />
+          </div>
+          <!-- <div class="item px-sm-4">
+            <img src="img/partner-9A.jpg" alt="partner" />
+          </div> -->
+          <!-- <div class="item"><img src="img/partner-11.jpg" alt="partner" /></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="gray-bg pt-4">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-sm-3">
+            <!-- <h5 class="text-white primary-font fw-bold">Lex Media</h5> -->
+            <img src="img/logo-icon-1.png" alt="logo" class="w-50p" />
+
+            <!-- <div class="underline w-25 mb-4"></div> -->
+            <p class="text-muted primary-font small mt-sm-4 mt-3">
+              Lex Media je nastala na iskustvima oragnizacije koja se deset
+              godina uspešno bavi kulturom, umetnošću i marketingom.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <h6
+              class="primary-font text-white text-uppercase logo-font mt-sm-0 mt-4"
+            >
+              Prečice
+            </h6>
+            <div class="underline w-25 mb-sm-4 mb-3"></div>
+            <p class="primary-font text-muted small p-0 m-0 pt-2">
+              <a href="index.html" class="text-decoration-none text-muted">
+                Početna
+              </a>
+            </p>
+            <p class="primary-font text-muted small m-0 mt-2">
+              <a href="about.html" class="text-decoration-none text-muted">
+                O Nama
+              </a>
+            </p>
+            <p class="primary-font text-muted small m-0 mt-2">
+              <a href="#" class="text-decoration-none text-muted">
+                Portfolio
+              </a>
+            </p>
+            <p class="primary-font text-muted small m-0 mt-2">
+              <a href="contact.html" class="text-decoration-none text-muted">
+                Kontakt
+              </a>
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <h6
+              class="primary-font text-white text-uppercase logo-font mt-sm-0 mt-4"
+            >
+              Informacije
+            </h6>
+            <div class="underline w-25 mb-sm-4 mb-3"></div>
+            <p class="primary-font text-muted small p-0 m-0 pt-2">
+              <a href="#" class="text-decoration-none text-muted">
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="fa6-solid:house"
+                ></span>
+                Vojvode Mišića 224
+              </a>
+            </p>
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a
+                href="mailto:office@lexmedia.rs"
+                class="text-decoration-none text-muted"
+              >
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="fa6-solid:envelope"
+                ></span>
+                office&#64;lexmedia&#46;rs
+              </a>
+            </p>
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a
+                href="tel:+381644545053"
+                class="text-decoration-none text-muted"
+              >
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="carbon:phone-filled"
+                ></span
+                >+381 64/4545-053
+              </a>
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <h6
+              class="primary-font text-white text-uppercase mt-sm-0 mt-4 logo-font"
+            >
+              Društvene mreže
+            </h6>
+            <div class="underline w-25 mb-sm-4 mb-3"></div>
+
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a href="#" class="text-decoration-none text-muted">
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="fa:youtube"
+                ></span
+                >Youtube
+              </a>
+            </p>
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a href="#" class="text-decoration-none text-muted">
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="akar-icons:instagram-fill"
+                ></span>
+                Instagram
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text-center text-white primary-font border-top border-secondary bg-black py-3 small m-0 mt-4"
+      >
+        © <span id="footer-year"></span> Lex Media, All Rights Reserved
+      </p>
+    </footer>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/scripts/countUp.umd.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/assets/scripts/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://res.cloudinary.com/veseylab/raw/upload/v1597754761/magicmouse/magic_mouse-1.0.js"
+    ></script> -->
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

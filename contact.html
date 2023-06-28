@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="mailto:office@lexmedia.rs" />
+    <meta
+      name="keywords"
+      content="Lex Media, Marketing, foto, Video, Promo, Web, Kontakt, Informacije"
+    />
+    <meta
+      name="description"
+      content="LEX Media je nastala kao spoj drugarstva, kreativnosti 
+      i posla. Ovde se nalaze Kontakt Informacije."
+    />
+
+    <meta name="copyright" content="Lex Media 2022. Sva prava zadržava." />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/lightgallery.js/dist/css/lightgallery.min.css"
+    />
+    <link rel="shortcut icon" href="img/logo-icon.ico" type="image/x-icon" />
+    <title>Lex Media</title>
+  </head>
+  <body onload="init()">
+    <div
+      id="preloader"
+      class="justify-content-center align-items-center w-100 h-100"
+    >
+      <img src="img/logo-icon.png" alt="loader" />
+    </div>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light py-2 bg-white position-fixed w-100 border-0"
+      id="navbar"
+    >
+      <div class="container w-md-75 w-100">
+        <div class="filler"></div>
+        <a
+          class="navbar-brand logo-font primary-color primary-color"
+          href="index.html"
+        >
+          <img src="img/logo-icon.png" class="me-1" alt="logo" />
+          Lex Media
+        </a>
+        <span
+          class="iconify text-black fs-1"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          data-icon="system-uicons:menu-hamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></span>
+        <!-- <span class="iconify" data-icon="system-uicons:menu-hamburger"></span> -->
+        <!-- </button> -->
+        <div
+          class="collapse navbar-collapse justify-content-end primary-font"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <!-- <div class="underline d-flex justify-content-end ms-auto"></div> -->
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" aria-current="page" href="index.html">
+                <span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span>
+                Početna</a
+              >
+              <div class="underline"></div>
+            </li>
+            <li class="nav-item">
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" href="about.html"
+                ><span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span
+                >O nama</a
+              >
+              <div class="underline"></div>
+            </li>
+            <li class="nav-item">
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" href="portfolio.html"
+                ><span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span
+                >Portfolio</a
+              >
+              <div class="underline"></div>
+            </li>
+            <li class="nav-item active">
+              <div class="underline d-flex justify-content-end ms-auto"></div>
+              <a class="nav-link" href="contact.html"
+                ><span
+                  class="iconify-inline d-inline"
+                  data-icon="dashicons:arrow-right-alt2"
+                ></span
+                >Kontakt</a
+              >
+              <div class="underline"></div>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown link
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- CONTACT -->
+    <div id="contact" class="pt-5">
+      <div class="container pt-5">
+        <div class="row pt-4 d-flex justify-content-between align-items-center">
+          <div class="col-6">
+            <h2 class="display-font display-5">
+              Kontaktirajte <span class="fw-bold">Nas</span>
+            </h2>
+          </div>
+          <div class="col-6 d-flex justify-content-end align-items-center">
+            <p class="primary-font text-end m-0">
+              <a href="index.html" class="text-decoration-none">home</a> /
+              contact
+            </p>
+          </div>
+
+          <hr />
+        </div>
+
+        <div class="row mt-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.2807916547517!2d20.452604277374558!3d44.80389783980038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a700724b9c42d%3A0x9e7d0e61fee51156!2sMilo%C5%A1a%20Pocerca%2010%2C%20Beograd!5e0!3m2!1sen!2srs!4v1657208208102!5m2!1sen!2srs"
+            class="contact-map"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="row my-4">
+          <div class="col-sm-6">
+            <h2 class="display-font mt-4 fs-1">Kontakt</h2>
+            <div class="underline w-25"></div>
+            <!-- <p class="primary-font small mt-4 fs-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              numquam officia aliquam voluptates! Sed, ad!
+            </p> -->
+            <p class="primary-font mt-4">
+              <a
+                href="mailto:office@lexmedia.rs"
+                class="text-muted text-decoration-none contact-link"
+              >
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:envelope-thin"
+                ></span>
+
+                office@lexmedia.rs
+              </a>
+            </p>
+            <p class="primary-font text-muted">
+              <a
+                href="tel:+381644545053"
+                class="text-muted text-decoration-none contact-link"
+              >
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:phone-call-thin"
+                ></span
+                >+381 64 4545 053
+              </a>
+            </p>
+            <p class="primary-font text-muted">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:house-line-thin"
+                ></span
+                >Beograd - Obrenovac
+              </a>
+            </p>
+            <p class="primary-font text-muted">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:navigation-arrow-thin"
+                ></span
+                >Office : Miloša Pocerca 10, 11000
+              </a>
+            </p>
+            <p class="primary-font text-muted">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:navigation-arrow-thin"
+                ></span
+                >Administracija : Vojvode Mišića 224, 11500
+              </a>
+            </p>
+            <p class="primary-font mt-4">
+              <!-- <a href="#" class="text-decoration-none text-muted contact-link">
+                <span
+                  class="iconify-inline fs-6 mx-3"
+                  data-icon="bi:facebook"
+                ></span>
+              </a> -->
+              <a
+                href="https://www.youtube.com/channel/UCeiyh2rhGmAWB2SzPZYEspA"
+                target="_blank"
+                class="text-decoration-none text-muted contact-link"
+              >
+                <span
+                  class="iconify-inline fs-6 mx-3"
+                  data-icon="bi:youtube"
+                ></span>
+              </a>
+              <a
+                href="https://www.instagram.com/lexmedia.rs/"
+                target="_blank"
+                class="text-decoration-none text-muted contact-link"
+              >
+                <span
+                  class="iconify-inline fs-6 mx-3"
+                  data-icon="bi:instagram"
+                ></span>
+              </a>
+              <!-- <a href="#" class="text-decoration-none text-muted contact-link">
+                <span
+                  class="iconify-inline fs-6 mx-3"
+                  data-icon="bi:linkedin"
+                ></span>
+              </a> -->
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="display-font mt-4 fs-1">Poslovne Informacije</h2>
+            <div class="underline w-25"></div>
+            <!-- <p class="primary-font small mt-4 fs-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              numquam officia aliquam voluptates! Sed, ad!
+            </p> -->
+            <p class="primary-font mt-4">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:bank-thin"
+                ></span>
+
+                Lex Media – Lex national group
+              </a>
+            </p>
+            <p class="primary-font">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="bi:coin"
+                ></span>
+
+                OTP Bank
+              </a>
+            </p>
+
+            <p class="primary-font text-muted">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="mdi:card-account-details-outline"
+                ></span>
+                Broj racuna : 325-9500500477443-72
+              </a>
+            </p>
+            <p class="primary-font text-muted">
+              <a href="#" class="text-muted text-decoration-none contact-link">
+                <span
+                  class="iconify-inline me-1 fs-5"
+                  data-icon="ph:password-thin"
+                ></span>
+                PIB : 107526996
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="gray-bg pt-4">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-sm-3">
+            <!-- <h5 class="text-white primary-font fw-bold">Lex Media</h5> -->
+            <img src="img/logo-icon-1.png" alt="logo" class="w-50p" />
+
+            <!-- <div class="underline w-25 mb-4"></div> -->
+            <p class="text-muted primary-font small mt-sm-4 mt-3">
+              Lex Media je nastala na iskustvima oragnizacije koja se deset
+              godina uspešno bavi kulturom, umetnošću i marketingom.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <h6
+              class="primary-font text-white text-uppercase logo-font mt-sm-0 mt-4"
+            >
+              Prečice
+            </h6>
+            <div class="underline w-25 mb-sm-4 mb-3"></div>
+            <p class="primary-font text-muted small p-0 m-0 pt-2">
+              <a href="index.html" class="text-decoration-none text-muted">
+                Početna
+              </a>
+            </p>
+            <p class="primary-font text-muted small m-0 mt-2">
+              <a href="about.html" class="text-decoration-none text-muted">
+                O Nama
+              </a>
+            </p>
+            <p class="primary-font text-muted small m-0 mt-2">
+              <a href="#" class="text-decoration-none text-muted">
+                Portfolio
+              </a>
+            </p>
+            <p class="primary-font text-muted small m-0 mt-2">
+              <a href="contact.html" class="text-decoration-none text-muted">
+                Kontakt
+              </a>
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <h6
+              class="primary-font text-white text-uppercase logo-font mt-sm-0 mt-4"
+            >
+              Informacije
+            </h6>
+            <div class="underline w-25 mb-sm-4 mb-3"></div>
+            <p class="primary-font text-muted small p-0 m-0 pt-2">
+              <a href="#" class="text-decoration-none text-muted">
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="fa6-solid:house"
+                ></span>
+                Vojvode Mišića 224
+              </a>
+            </p>
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a
+                href="mailto:office@lexmedia.rs"
+                class="text-decoration-none text-muted"
+              >
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="fa6-solid:envelope"
+                ></span>
+                office&#64;lexmedia&#46;rs
+              </a>
+            </p>
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a
+                href="tel:+381644545053"
+                class="text-decoration-none text-muted"
+              >
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="carbon:phone-filled"
+                ></span
+                >+381 64/4545-053
+              </a>
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <h6
+              class="primary-font text-white text-uppercase mt-sm-0 mt-4 logo-font"
+            >
+              Društvene mreže
+            </h6>
+            <div class="underline w-25 mb-sm-4 mb-3"></div>
+
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a href="#" class="text-decoration-none text-muted">
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="fa:youtube"
+                ></span
+                >Youtube
+              </a>
+            </p>
+            <p class="primary-font text-muted small p-0 m-0 mt-3">
+              <a href="#" class="text-decoration-none text-muted">
+                <span
+                  class="iconify-inline fs-6 me-2"
+                  data-icon="akar-icons:instagram-fill"
+                ></span>
+                Instagram
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <p
+        class="text-center text-white primary-font border-top border-secondary bg-black py-3 small m-0 mt-4"
+      >
+        © <span id="footer-year"></span> Lex Media, All Rights Reserved
+      </p>
+    </footer>
+    <!-- Iconify Design -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <!-- Boostrap 5 JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/scripts/countUp.umd.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/assets/scripts/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+    <!-- <script src="node_modules/filterizr/dist/vanilla.filterizr.min.js"></script> -->
+    <script src="/node_modules/filterizr/dist/jquery.filterizr.min.js"></script>
+    <!-- <script src="/node_modules/filterizr/dist/filterizr.min.js"></script> -->
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="assets/main.js"></script>
+    <script src="/node_modules/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <!-- <script src="/node_modules/filterizr/dist/vanilla.filterizr.min.js"></script> -->
+    <!-- <script src="/node_modules/lightgallery.js/src/js/lg-utils.js"></script> -->
+
+    <script>
+      // Default options
+      const options = {};
+      const filterizr = new Filterizr(".filter-container");
+      function remove(br) {
+        let link = ".filter-link-" + br;
+        $(".f-link").removeClass("active");
+        $(link).addClass("active");
+      }
+      lightGallery(document.getElementById("lightgallery"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "countup.js": "^2.2.0",
+    "filterizr": "^2.2.4",
+    "lightgallery": "^2.5.0",
+    "lightgallery.js": "^1.4.0",
+    "owl.carousel": "^2.3.4",
+    "waypoints": "^4.0.1"
+  }
+}
